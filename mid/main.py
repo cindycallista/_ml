@@ -28,7 +28,7 @@ batch_t = torch.unsqueeze(img_t, 0)
 with torch.no_grad():
     out = model(batch_t)
 
-LABELS_URL = "https://github.com/cindycallista/_ml/blob/main/mid/img.jpg"
+LABELS_URL = "https://github.com/cindycallista/_ml/blob/main/mid/Pug_600.jpg"
 labels_response = requests.get(LABELS_URL)
 labels = labels_response.text.strip().split("\n")
 
